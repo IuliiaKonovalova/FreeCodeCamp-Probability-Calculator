@@ -32,6 +32,13 @@ class Hat:
         if number of balls to draw exceeds the available quantity,
         returns all balls in the Hat.
         """
-        all_removed = []
+        removed_balls = []
         if number > len(self.contents):
             return self.content
+        else:
+            for i in range(number):
+                removed_ball = self.content.pop(
+                    int(random.random() * len(self.contents))
+                )
+                removed_balls.append(removed_ball)
+                return removed_balls
