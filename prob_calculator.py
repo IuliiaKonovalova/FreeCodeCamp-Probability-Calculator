@@ -25,4 +25,13 @@ class Hat:
         """
         return self.contents
 
-    def
+    def draw(self, number):
+        """
+        Accepts a number of balls to draw,
+        Removes balls at random from self.contents list,
+        if number of balls to draw exceeds the available quantity,
+        returns all balls in the Hat.
+        """
+        all_removed = []
+        if number > len(self.contents):
+            return self.content
