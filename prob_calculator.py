@@ -37,11 +37,10 @@ class Hat:
             return self.contents
         else:
             for i in range(number):
-                removed_ball = self.contents.pop(
-                    int(random.random() * len(self.contents))
-                )
+                removed_ball = self.contents.pop(int(random.random() * len(self.contents)))
                 removed_balls.append(removed_ball)
-                return removed_balls
+            return removed_balls
+                
     def __str__(self):
         return ', '.join(self.contents)
 
