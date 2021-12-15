@@ -42,6 +42,8 @@ class Hat:
                 )
                 removed_balls.append(removed_ball)
                 return removed_balls
+    def __str__(self):
+        return ', '.join(self.contents)
 
 def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     """
