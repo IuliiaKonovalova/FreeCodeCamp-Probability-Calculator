@@ -34,10 +34,10 @@ class Hat:
         """
         removed_balls = []
         if number > len(self.contents):
-            return self.content
+            return self.contents
         else:
             for i in range(number):
-                removed_ball = self.content.pop(
+                removed_ball = self.contents.pop(
                     int(random.random() * len(self.contents))
                 )
                 removed_balls.append(removed_ball)
