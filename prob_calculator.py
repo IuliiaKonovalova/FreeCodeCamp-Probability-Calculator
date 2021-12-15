@@ -18,3 +18,11 @@ class Hat:
         for key, value in kwargs.items():
             for i in range(value):
                 self.contents.append(key)
+
+    def get_contents(self):
+        """
+        Returns self content of the Hat class
+        """
+        return self.contents
+
+    def
